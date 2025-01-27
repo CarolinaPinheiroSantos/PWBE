@@ -27,4 +27,10 @@ class Biblioteca:
             if self.livros[titulo]["disponivel"] > 0:
                 print(f"O livro {titulo} está disponível.")
             else:
-       
+                print(f"O livro {titulo} está indisponível.")
+            
+biblioteca = Biblioteca()
+biblioteca.cadastrar_livro("Crepusculo", "sla", 100)
+biblioteca.emprestar_livro("Crepusculo")
+biblioteca.devolver_livro("Crepusculo")
+biblioteca.verificar_disponibilidade("Blabla")
