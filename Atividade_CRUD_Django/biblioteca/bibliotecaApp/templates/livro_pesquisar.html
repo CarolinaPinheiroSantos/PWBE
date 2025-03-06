@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Livros</title>
+</head>
+<body>
+    <h1>Buscar Livros</h1>
+
+    <form method="get">
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados da Busca</h2>
+    <ul>
+        {% for livro in livros %}
+            <li>{{ livro.titulo }} - {{ livro.autor }} ({{ livro.ano }})</li>
+        {% empty %}
+            <li>Nenhum livro encontrado.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

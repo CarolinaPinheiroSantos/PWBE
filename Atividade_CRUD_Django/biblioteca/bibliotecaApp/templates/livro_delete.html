@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar livro</title>
+</head>
+<body>
+    <h1>Voce tem certeza que deseja excluir {{ livro.tiulo }}?????????????????????????</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">sim, nao ligoo</button>
+    </form>
+    <a href="{% url 'livro_read'%}">affffff naoooooooooo</a>
+</body>
+</html>
