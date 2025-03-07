@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Livros na biblioteca</h1>
+    <a href="{% url 'livro_create' %}">Criar um novo livro</a><br>
+    <a href="{% url 'livro_pesquisar' %}">pesquisar livro</a>
+
+    <ul>
+        {% for livro in livros %}
+        <li>
+            {{ livro.titulo }}
+            <a href="{% url 'livro_update' livro.pk %}">editar</a>
+            <a href="{% url 'livro_delete' livro.pk %}">delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

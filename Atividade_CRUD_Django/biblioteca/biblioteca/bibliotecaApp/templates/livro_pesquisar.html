@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Livros</title>
+</head>
+<body>
+    <h1>Buscar Livros</h1>
+
+    <form method="get" action="{% url 'livro_pesquisar' %}">
+        <label for="q">Pesquisar:</label>
+        <input type="text" id="q" name="q" placeholder="Digite o título ou autor..." value="{{ query }}">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Resultados da Busca</h2>
+    <ul>
+        {% if query %}
+            {% for livro in livros %}
+                <li>{{ livro.titulo }} - {{ livro.autor }} ({{ livro.ano }})</li>
+            {% empty %}
+                <li>Nenhum livro encontrado para "{{ query }}".</li>
+            {% endfor %}
+        {% else %}
+            <li>Digite um termo de pesquisa para encontrar livros.</li>
+        {% endif %}
+    </ul>
+</body>
+</html>
