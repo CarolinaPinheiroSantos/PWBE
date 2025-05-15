@@ -19,7 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework_simplejwt',
     'rest_framework',
-    'escola'
+    'escola',
+    'drf_yasg'
 ]
 
 REST_FRAMEWORK = {
@@ -71,7 +72,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'escola',
         'USER': 'root',
-        'PASSWORD': 'carol',
+        'PASSWORD': 'senai',
         'HOST': 'localhost',
         'PORT': '3306'
     }
