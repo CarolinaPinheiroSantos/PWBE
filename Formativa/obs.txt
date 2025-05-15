@@ -1,6 +1,10 @@
+*documentacao
+*fazer um redme
+
 {
-    "id": 1,
-    "NI": "123456",
+    "username": "profcarol",
+    "password": "78910",
+    "NI": "5467",
     "nome": "Carolina",
     "email": "profcarol@gmail.com",
     "telefone": "12345678",
@@ -8,17 +12,24 @@
     "data_contratacao": "2024-08-16"
 }
 
+{
+    "NI": "5463",
+    "nome": "Paulo Sergio",
+    "email": "profsergio@gmail.com",
+    "telefone": "123456789",
+    "data_nascimento": "2006-08-20",
+    "data_contratacao": "2024-01-16" 
+}
+
 
 - implementar endpoints para o cadastro, visualização, atualização e exclusão de
 Professores, Disciplinas e Reservas de Ambiente. OK✅
 
 - Desenvolver endpoints de visualização específicos para professores (exibição das
-Disciplinas atribuídas e reservas realizadas).
+Disciplinas atribuídas e reservas realizadas).OK✅
 
 - Configurar a autorização para garantir que apenas os Gestores possam cadastrar, editar
-ou excluir Professores, Disciplinas e Reservas de Ambiente.
+ou excluir Professores, Disciplinas e Reservas de Ambiente.OK✅
 
-
-
-?Implementar mecanismos de validação e verificação de dados nos endpoints.
+- Implementar mecanismos de validação e verificação de dados nos endpoints.OK✅
 
