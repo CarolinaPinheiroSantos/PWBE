@@ -15,5 +15,5 @@ Documentação: http://127.0.0.1:8000/swagger/
 4.  Crie o gestor
       python manage.py createsuperuser
 
-JWT para autenticação
+JWT para autenticação \
 Para acessar os endpoints logar no http://127.0.0.1:8000/login/ com usuário e senha e salvar o token para utilização.
