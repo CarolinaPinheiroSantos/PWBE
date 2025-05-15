@@ -4,7 +4,7 @@ Este projeto é uma API desenvolvida com Django e Django REST Framework para ger
 Documentação: http://127.0.0.1:8000/swagger/
 
 1. Criar area virtual e ative:\
-      python -m venv env 
+      python -m venv env \\
       env\Scripts\activate 
 
 2. Instalar as bibliotecas
